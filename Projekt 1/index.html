@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Nightfury - Nauč sa HTML a CSS</title>
+		<meta name="description" content="Toto je nova web stranka"> <!-- pomocou tohto riadka si vieme nastavit meta description, cize text, ktory sa zobrazi vo vyhliadaci (popis nasej stranky). Mozeme si precitat viac na web stranke sitepoint.com -->
+
+		<meta name="author" content="Patrik">	<!-- tymto nastavime autora tejto web stranky -->
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&amp;subset=latin-ext" rel="stylesheet">
+
+		<link rel="stylesheet" href="css/font-awesome.min.css">		<!-- tymto prikazom vieme nastavit fonty (nie normalne, ale take, pomocou ktorych vieme dat na stranku nejaku ikonu) vyhodou je to, ze su vektorove -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/selectordie.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+		<![endif]-->
+
+		<!-- aby sa stranka spravne zobrazovala aj na starsich prehliadacoch, navstivime stranku cdnjs.com, vo vyhliadavaci napiseme "html5shiv" a skopirujeme link na js subor, ktory vlozime do atributu "src" -->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+		<header>
+			<div class="contact-bar">
+				<div class="container">
+					<ul class="menu personal">
+					<li><i class="fa fa-phone"></i><a href="tel:+421900111222">+421 900 111 222</a></li>
+					<li><i class="fa fa-envelope"></i><a href="mailto:email@mailinator.com">email@mailinator.com</a></li>
+					</ul>
+					<ul class="menu social">
+					<li class="social-icon"><i class="fa fa-github"></i> </li>
+					<li class="social-icon"><i class="fa fa-twitter"></i></li>
+					<li class="social-icon"><i class="fa fa-facebook"></i></li>
+					<li class="social-icon"><i class="fa fa-linkedin"></i></li>
+					</ul>
+				</div>
+			</div>
+			<div class="nav-bar">
+				<div class="container">
+					<h1 class="logo">
+						<a href="#">
+							<strong>NIGHT</strong>FURY<i class="fa fa-fire"> </i>
+						</a>
+					</h1>
+
+					<nav class="group">
+						<ul class="menu navigation">
+							<li><a href="index.html"><i class="fa fa-shield fa-2x"></i>Domov</a></li>
+							<li class="selected"><a href="portfolio.html"><i class="fa fa-leaf fa-2x"></i>Portfolio</a></li>	<!-- ak ma nejaky element classu "selected" a je vhodne definovane v CSS, tak zabezpecime to, ze v menu bude podstranka, na ktorej sa aktualne nachadzame oznacena inou farbou ako ostatne -->
+							<li><a href="about.html"><i class="fa fa-bolt fa-2x"></i>O nás</a></li>
+							<li><a href="contact.html"><i class="fa fa-trophy fa-2x"></i>Kontakt</a></li>	<!-- v classe mame "fa-2x", tzn. ze ikonka bude dvojnasobnej velkosti -->
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+
+
+		<main>
+			<article>
+				<header class="post-header">
+					<div class="container">
+						<h1 class="post-title">Portfólio našich prác</h1>
+					</div>
+				</header>
+				<div class="post-content">
+					<div class="container">
+						<h2 class="text-center">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h2>
+						<ul class="menu controls">
+							<li class="selected"><a href="index.html">Všetko</a></li>
+							<li><a href="web.html">Web</a></li>
+							<li><a href="branding.html">Branding</a></li>
+							<li><a href="fotografia.html">Fotografia</a></li>
+							<li><a href="video.html">Video</a></li>
+						</ul>
+
+						<form class="menu-dropdown">
+							<select onchange="location = this.options[this.selectedIndex].value;">
+								<option value="web.html">Web</option>
+								<option value="branding.html">Branding</option>
+								<option value="fotografia.html">Fotografia</option>
+								<option value="video.html">Video</option>
+							</select>
+						</form>
+
+
+					</div>
+
+					<section class="gallery">
+							<div class="container">
+								<a href="img/adventure/1.png">	<!-- originalna velkost obrazku -->
+									<img src="img/adventure/thumb-1.png" alt="" height="218" width="386">	<!-- zmensena velkost obrazku -->
+								</a>
+
+								<a href="img/adventure/2.png">
+									<img src="img/adventure/thumb-2.png" alt="" height="218" width="386">
+								</a>
+
+								<a href="img/adventure/3.png">
+									<img src="img/adventure/thumb-3.png" alt="" height="218" width="386">
+								</a>
+
+								<a href="img/adventure/4.png">
+									<img src="img/adventure/thumb-4.png" alt="" height="218" width="386">
+								</a>
+
+								<a href="img/adventure/5.png">
+									<img src="img/adventure/thumb-5.png" alt="" height="218" width="386">
+								</a>
+
+								<a href="img/adventure/6.png">
+									<img src="img/adventure/thumb-6.png" alt="" height="218" width="386">
+								</a>
+
+								<a href="img/adventure/7.png">
+									<img src="img/adventure/thumb-7.png" alt="" height="218" width="386">
+								</a>
+
+								<a href="img/adventure/8.png">
+									<img src="img/adventure/thumb-8.png" alt="" height="218" width="386">
+								</a>
+
+								<a href="img/adventure/9.png">
+									<img src="img/adventure/thumb-9.png" alt="" height="218" width="386">
+								</a>
+							</div>
+						</section>
+				</div>
+			</article>
+		</main>
+
+		<aside class="pre-footer">
+			<div class="container">
+				<p>
+					<strong>Zaujali sme Vas pre novy projekt?</strong>
+					Jednoducho nam zavolajte alebo napiste
+				</p>
+
+				<ul class="menu personal">
+					<li><i class="fa fa-phone"></i><a href="tel:+421900111222">+421 900 111 222</a></li>
+					<li><i class="fa fa-envelope"></i><a href="mailto:email@mailinator.com">email@mailinator.com</a></li>
+					</ul>
+			</div>
+		</aside>
+		<footer>
+			<div class="container">
+				<p class="logo">
+					<strong>NIGHT</strong>FURY<i class="fa fa-fire"> </i>
+				</p>
+				<p class="author">
+					Navrh a design pripravil <a href="mailto:haha@haha.com">Patrik@Palko.com</a>
+				</p>
+
+					<ul class="menu nav-footer">
+						<li><a href="index.html"></i>Domov</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="about.html">O nás</a></li>
+						<li><a href="contact.html">Kontakt</a></li>
+					</ul>
+
+			</div>
+		</footer>
+		<!-- pridanie JS suboru s nazvom "selectordie.js" -->
+		<script src="js/selectordie.js"></script>
+		<!-- tento skript by sme mali najst na stranke (podla toho, co chceme na nasu stranku dat) a vlozime ho sem, avsak stranka, z ktorej som bral selectordie uz nebola aktivna, preto som to skopiroval z videa. Pouzitim tohto jQuery pluginu sme zabezpecili to, ze v kazdom prehliadaci sa bude formular zobrazovat uplne rovnako-->
+		<script>
+			$(".menu-dropdown select").selectOrDie();
+		</script>
+	</body>
+</html>
